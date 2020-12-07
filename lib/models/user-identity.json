@@ -24,20 +24,17 @@
     "created": "Date",
     "modified": "Date"
   },
-  "acls": [{
-    "principalType": "ROLE",
-    "principalId": "$everyone",
-    "permission": "DENY"
-  }, {
-    "principalType": "ROLE",
-    "principalId": "$owner",
-    "permission": "ALLOW"
-  }],
-  "relations": {
-    "user": {
-      "type": "belongsTo",
-      "model": "Customer",
-      "foreignKey": "userId"
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
     }
-  }
+  ],
+  "relations": {}
 }
