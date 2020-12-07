@@ -36,5 +36,11 @@
       "permission": "ALLOW"
     }
   ],
-  "relations": {}
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "userId"
+    }
+  }
 }
